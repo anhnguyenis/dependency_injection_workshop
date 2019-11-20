@@ -1,7 +1,10 @@
 class Greeter
+  def initialize(smiley = Smiley.new) #sets a default value, it will be this unless you pass in an argument - create a new instance of smiley to allow you to pass a parameter
+     @smiley = smiley
+   end
+
   def greet
-    smiley = Smiley.new       #calls a new class of Smiley. So we use a double.
-    "Hello #{smiley.get}"
+    "Hello #{@smiley.get}"
   end
 end
 
