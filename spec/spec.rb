@@ -1,7 +1,8 @@
 describe Greeter do
   describe "#greet" do
     it "prints a message and a smiley" do
-      smiley_double = double :smiley, get: ":D" #method name and return value
+      smiley_double = double :smiley, get: ":D"
+      #method name and return value
       greeter = Greeter.new(smiley_double)
       expect(greeter.greet).to eq "Hello :D"
     end
