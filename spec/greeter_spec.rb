@@ -1,3 +1,4 @@
+require 'greeter'
 describe Greeter do
   describe "#greet" do
     it "prints a message and a smiley" do
